@@ -8,14 +8,16 @@
 import SwiftUI
 
 struct ContentView: View {
+    
+    var foodList: [String] = ["Tomato", "Bacon", "Apple1", "Banana", "Orange", "Shrimp", "Candy", "Water", "Apple2", "Apple3", "Notebook", "Pen", "Snacks", "iPhone", "iPad"]
+    
     var body: some View {
-        VStack {
-            Image(systemName: "globe")
-                .imageScale(.large)
-                .foregroundColor(.accentColor)
-            Text("Hello, JimBeanLit!")
+        NavigationView {
+            List(foodList, id: \.self) { food in
+                Text(food)
+            }
+            .navigationTitle("Food List")
         }
-        .padding()
     }
 }
 
