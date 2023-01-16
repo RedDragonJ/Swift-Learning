@@ -9,12 +9,12 @@ import SwiftUI
 
 struct ContentView: View {
     
-    var foodList: [String] = ["Tomato", "Bacon", "Apple1", "Banana", "Orange", "Shrimp", "Candy", "Water", "Apple2", "Apple3", "Notebook", "Pen", "Snacks", "iPhone", "iPad"]
+    var foodList: [String] = ["Tomato", "Meat", "Apple", "Banana", "Orange", "Shrimp", "Candy", "Phone", "Laptop"]
     
     var body: some View {
         NavigationView {
             List(foodList, id: \.self) { food in
-                Text(food)
+                CellView(objectTitle: food)
             }
             .navigationTitle("Food List")
         }
