@@ -14,7 +14,17 @@ struct ContentView: View {
     var body: some View {
         NavigationView {
             List(foodList, id: \.self) { food in
-                CellView(objectTitle: food)
+                
+                ZStack(alignment: .leading) {
+                    NavigationLink {
+                        ContentDetail(itemImageName: food, itemName: food)
+                    } label: {
+                        EmptyView()
+                    }
+                    .opacity(0)
+                    
+                    CellView(objectTitle: food)
+                }
             }
             .navigationTitle("Food List")
         }
