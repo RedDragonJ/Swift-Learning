@@ -1,0 +1,50 @@
+[
+	{
+		"name": "Apple",
+		"imageUrl": "",
+		"type": "fruit",
+		"description": "An apple is a round or oval-shaped fruit that is typically red, green, or yellow in color. It has a firm outer skin and a juicy, sweet flesh inside that is surrounded by small seeds in the core. Apples are a popular fruit for eating fresh, as well as for cooking and baking in various recipes. They are a rich source of vitamins and antioxidants, and are considered a healthy food due to their low calorie content and high fiber content."
+	},
+	{
+		"name": "Banana",
+		"imageUrl": "",
+		"type": "fruit",
+		"description": "A banana is a long, curved, yellow fruit that grows in clusters on a large tropical herb. The skin of a banana is usually yellow and can be eaten when it is ripe, and the inner flesh is soft and sweet. Bananas are a good source of potassium, vitamin C, dietary fiber, and various other vitamins and minerals. They are easy to peel and are a convenient and healthy snack, making them a popular food choice for people of all ages. Additionally, ripe bananas can be mashed and used as a base for baking in a variety of sweet recipes, such as banana bread or banana muffins."
+	},
+	{
+		"name": "Candy",
+		"imageUrl": "",
+		"type": "sweets",
+		"description": "Candy is a sweet treat that is typically made from sugar or corn syrup, along with other ingredients such as flavorings, colorings, and sometimes additional fillings like fruit, nuts, or chocolate. It can come in a variety of forms, including hard candies, chews, taffy, gummies, chocolates, and more. Candy is usually enjoyed as a snack or dessert and is often consumed for its sweet flavor and texture. However, it is also considered unhealthy due to its high sugar content and lack of nutritional value."
+	},
+	{
+		"name": "Steak",
+		"imageUrl": "",
+		"type": "meat",
+		"description": "Steak is a type of meat that is typically cut from beef cattle and cooked by grilling, frying, or broiling. It is often considered a high-quality, flavorful, and tender cut of meat, and is often served as a main dish in restaurants or at home. Steaks can vary in thickness, size, and cut, with popular cuts including rib-eye, sirloin, tenderloin, and filet mignon. Steaks are usually seasoned and prepared with various sauces, rubs, or marinades to enhance their flavor, and are often served with side dishes like vegetables, potatoes, or rice. Despite its rich flavor, steak is often a high-fat food and should be consumed in moderation as part of a balanced diet."
+	},
+	{
+		"name": "Orange",
+		"imageUrl": "",
+		"type": "fruit",
+		"description": "An orange is a type of citrus fruit that is round and typically orange in color. It has a thin, smooth skin and a juicy, sweet flesh inside that is separated into segments. Oranges are a popular fruit for eating fresh and are also used in various juices and other food and drink products. They are a good source of vitamin C and other nutrients, and are known for their sweet, tart flavor and juicy texture. Oranges are typically available year-round and are often eaten as a snack or used in cooking and baking to add flavor to various dishes."
+	},
+	{
+		"name": "iPhone",
+		"imageUrl": "",
+		"type": "mobile",
+		"description": "The iPhone is a line of smartphones designed and marketed by Apple Inc. First introduced in 2007, the iPhone has since become one of the most popular and recognizable smartphones on the market. iPhones run on Apple's iOS operating system and are known for their user-friendly interface, sleek design, and wide range of features, including high-quality cameras, touch screens, and access to thousands of apps through the App Store. iPhones also offer a range of services through Apple's ecosystem, such as iMessage, FaceTime, and Apple Pay. The iPhone has evolved over the years, with new models featuring improved performance, battery life, and other features, making it a popular choice for those seeking a high-end smartphone experience."
+	},
+	{
+		"name": "Shrimp",
+		"imageUrl": "",
+		"type": "food",
+		"description": "Shrimp are small, saltwater crustaceans that are widely consumed as a type of seafood. They are characterized by their long, slender bodies and distinctive tails, and can range in size from small, cocktail shrimp to larger, jumbo shrimp. Shrimp are typically cooked by boiling, grilling, frying, or sautéing and are often used in a variety of dishes, including pasta, salads, stir-fries, and seafood platters. They are a rich source of protein and other nutrients, and are considered to be a low-fat, low-calorie food. Despite their popularity, some people may have allergies or other health concerns related to consuming shrimp, so it is important to check with a doctor or dietitian before adding this food to your diet."
+	},
+	{
+		"name": "Tomato",
+		"imageUrl": "",
+		"type": "fruit",
+		"description": "A tomato is a round, red or yellow fruit that is often used as a vegetable in cooking. It has a juicy flesh and a soft skin, and is typically eaten raw in salads, sandwiches, or as a snack. Tomatoes are also used as an ingredient in various cooked dishes, such as sauces, soups, stews, and casseroles. They are a good source of vitamins A and C, as well as potassium, and are low in calories. In addition to their nutritional value, tomatoes are also prized for their sweet, slightly acidic flavor and versatility in cooking. They are widely available and are often enjoyed fresh, although they can also be canned, dried, or otherwise preserved for later use."
+	}
+]
