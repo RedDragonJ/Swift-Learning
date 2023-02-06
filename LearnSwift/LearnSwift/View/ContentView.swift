@@ -9,24 +9,32 @@ import SwiftUI
 
 struct ContentView: View {
     
-    var foodList: [String] = ["Tomato", "Meat", "Apple", "Banana", "Orange", "Shrimp", "Candy", "Phone", "Laptop"]
+    private let api = "https://raw.githubusercontent.com/RedDragonJ/Swift-Learning/main/LearnSwift/SampleServerFiles/items.json"
+    @StateObject private var viewModel = ViewModel()
     
     var body: some View {
         NavigationView {
-            List(foodList, id: \.self) { food in
+            List(viewModel.items, id: \.self) { item in
                 
                 ZStack(alignment: .leading) {
                     NavigationLink {
-                        ContentDetail(itemImageName: food, itemName: food)
+                        ContentDetail(itemImageName: item, itemName: item)
                     } label: {
                         EmptyView()
                     }
                     .opacity(0)
                     
-                    CellView(objectTitle: food)
+                    CellView(objectTitle: item)
                 }
             }
             .navigationTitle("Food List")
+            .task {
+                do {
+                    try await viewModel.getAPIData(urlString: api)
+                } catch let error {
+                    print(error.localizedDescription)
+                }
+            }
         }
     }
 }
