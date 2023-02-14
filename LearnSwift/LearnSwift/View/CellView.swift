@@ -9,22 +9,29 @@ import SwiftUI
 
 struct CellView: View {
     
-    let objectTitle: String
+    let item: Item
     
     var body: some View {
         HStack {
-            Image(objectTitle.lowercased())
-                .resizable()
-                .frame(width: 40, height: 40)
-                .clipShape(Circle())
-                .overlay {
-                    Circle().stroke(.white, lineWidth: 4)
-                }
-                .shadow(radius: 7)
+            AsyncImage(url: item.imageUrl) { image in
+                image
+                    .resizable()
+                    .frame(width: 40, height: 40)
+                    .clipShape(Circle())
+                    .overlay {
+                        Circle().stroke(.white, lineWidth: 4)
+                    }
+                    .shadow(radius: 7)
+                
+            } placeholder: {
+                // Do nothing
+            }
+                
             VStack(alignment: .leading) {
-                Text(objectTitle)
+                Text(item.name)
                     .font(.headline)
-                Text("This is \(objectTitle.lowercased()) that we use everyday")
+                Text(item.description)
+                    .lineLimit(1)
                     .font(.caption)
             }
         }
@@ -33,6 +40,6 @@ struct CellView: View {
 
 struct CellView_Previews: PreviewProvider {
     static var previews: some View {
-        CellView(objectTitle: "Title")
+        CellView(item: Item(name: "", imageUrl: URL(string: "")!, type: .food, description: ""))
     }
 }

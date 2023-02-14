@@ -9,26 +9,29 @@ import SwiftUI
 
 struct ContentDetail: View {
     
-    var itemImageName: String
-    var itemName: String
-    var itemType: String = "Vegatable"
-    var itemDecription: String = "This is a vegatable that is good for you. It is healthier option to eat vegatable everyday. To learn more about this particular vegatable, please go on Google and search it."
-    
+    let item: Item
+        
     var body: some View {
         VStack(spacing: 16) {
-            Image(itemImageName.lowercased())
-                .resizable()
-                .frame(width: 120, height: 120)
-                .clipShape(Circle())
-                .overlay {
-                    Circle().stroke(.white, lineWidth: 4)
-                }
-                .shadow(radius: 7)
-            Text(itemName)
+            AsyncImage(url: item.imageUrl) { image in
+                image
+                    .resizable()
+                    .frame(width: 120, height: 120)
+                    .clipShape(Circle())
+                    .overlay {
+                        Circle().stroke(.white, lineWidth: 4)
+                    }
+                    .shadow(radius: 7)
+
+            } placeholder: {
+                // Do nothing
+            }
+            
+            Text(item.name)
                 .font(.title)
-            Text(itemType)
+            Text(item.type.rawValue)
                 .font(.headline)
-            Text(itemDecription)
+            Text(item.description)
             
             Spacer()
         }
@@ -38,6 +41,6 @@ struct ContentDetail: View {
 
 struct ContentDetail_Previews: PreviewProvider {
     static var previews: some View {
-        ContentDetail(itemImageName: "Tomato", itemName: "Tomato")
+        ContentDetail(item: Item(name: "", imageUrl: URL(string: "")!, type: .food, description: ""))
     }
 }

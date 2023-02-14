@@ -11,7 +11,7 @@ class ViewModel: ObservableObject {
     
     private var networkSession: NetworkInterface
     
-    @Published var items: [String] = []
+    @Published var items: [Item] = []
     
     init(networkSession: NetworkInterface = NetworkSession()) {
         self.networkSession = networkSession
@@ -24,7 +24,11 @@ class ViewModel: ObservableObject {
         }
         
         let responseData = try await networkSession.fetchData(url: url)
-        let json = try JSONSerialization.jsonObject(with: responseData) as? [Any]
-        print(json)
+        
+        do {
+            items = try JSONDecoder().decode([Item].self, from: responseData)
+        } catch let error {
+            throw error
+        }
     }
 }

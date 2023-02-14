@@ -18,13 +18,13 @@ struct ContentView: View {
                 
                 ZStack(alignment: .leading) {
                     NavigationLink {
-                        ContentDetail(itemImageName: item, itemName: item)
+                        ContentDetail(item: item)
                     } label: {
                         EmptyView()
                     }
                     .opacity(0)
                     
-                    CellView(objectTitle: item)
+                    CellView(item: item)
                 }
             }
             .navigationTitle("Food List")
