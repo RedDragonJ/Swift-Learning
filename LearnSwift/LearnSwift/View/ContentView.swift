@@ -24,7 +24,7 @@ struct ContentView: View {
                     }
                     .opacity(0)
                     
-                    CellView(item: item)
+                    CellView(viewModel: viewModel, item: item)
                 }
             }
             .navigationTitle("Food List")

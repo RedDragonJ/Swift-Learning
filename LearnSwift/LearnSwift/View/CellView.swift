@@ -6,15 +6,19 @@
 //
 
 import SwiftUI
+import UIKit
 
 struct CellView: View {
     
+    @ObservedObject var viewModel: ViewModel
     let item: Item
+    
+    @State private var image: UIImage?
     
     var body: some View {
         HStack {
-            AsyncImage(url: item.imageUrl) { image in
-                image
+            if let image {
+                Image(uiImage: image)
                     .resizable()
                     .frame(width: 40, height: 40)
                     .clipShape(Circle())
@@ -22,9 +26,6 @@ struct CellView: View {
                         Circle().stroke(.white, lineWidth: 4)
                     }
                     .shadow(radius: 7)
-                
-            } placeholder: {
-                // Do nothing
             }
                 
             VStack(alignment: .leading) {
@@ -35,11 +36,18 @@ struct CellView: View {
                     .font(.caption)
             }
         }
+        .task {
+            do {
+                image = try await viewModel.getImage(item.imageUrl)
+            } catch let error {
+                print(error.localizedDescription)
+            }
+        }
     }
 }
 
 struct CellView_Previews: PreviewProvider {
     static var previews: some View {
-        CellView(item: Item(name: "", imageUrl: URL(string: "")!, type: .food, description: ""))
+        CellView(viewModel: ViewModel(), item: Item(name: "", imageUrl: URL(string: "")!, type: .food, description: ""))
     }
 }

@@ -5,16 +5,28 @@
 //  Created by James Layton on 2/5/23.
 //
 
-import Foundation
+import UIKit
 
 class ViewModel: ObservableObject {
     
     private var networkSession: NetworkInterface
+    private var imageRepo: ImageRepoInterface
     
     @Published var items: [Item] = []
     
-    init(networkSession: NetworkInterface = NetworkSession()) {
+    init(networkSession: NetworkInterface = NetworkSession(),
+         imageRepo: ImageRepoInterface = ImageRepo()) {
         self.networkSession = networkSession
+        self.imageRepo = imageRepo
+    }
+    
+    @MainActor
+    func getImage(_ url: URL) async throws -> UIImage {
+        if let image = try await imageRepo.getImage(url: url) {
+            return image
+        } else {
+            return UIImage(systemName: "questionmark.circle.fill")!
+        }
     }
     
     @MainActor
