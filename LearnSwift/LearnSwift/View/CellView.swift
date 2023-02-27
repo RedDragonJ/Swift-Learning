@@ -10,39 +10,56 @@ import UIKit
 
 struct CellView: View {
     
+    @State private var showAlert = false
+    @State private var alertDetail: AlertDetail?
+    @State private var showProgressView = false
+    
     @ObservedObject var viewModel: ViewModel
     let item: Item
     
     @State private var image: UIImage?
     
     var body: some View {
-        HStack {
-            if let image {
-                Image(uiImage: image)
-                    .resizable()
-                    .frame(width: 40, height: 40)
-                    .clipShape(Circle())
-                    .overlay {
-                        Circle().stroke(.white, lineWidth: 4)
-                    }
-                    .shadow(radius: 7)
+        ZStack {
+            HStack {
+                if let image {
+                    Image(uiImage: image)
+                        .resizable()
+                        .frame(width: 40, height: 40)
+                        .clipShape(Circle())
+                        .overlay {
+                            Circle().stroke(.white, lineWidth: 4)
+                        }
+                        .shadow(radius: 7)
+                }
+                    
+                VStack(alignment: .leading) {
+                    Text(item.name)
+                        .font(.headline)
+                    Text(item.description)
+                        .lineLimit(1)
+                        .font(.caption)
+                }
             }
-                
-            VStack(alignment: .leading) {
-                Text(item.name)
-                    .font(.headline)
-                Text(item.description)
-                    .lineLimit(1)
-                    .font(.caption)
+            .alert(with: $showAlert, alertDetails: $alertDetail)
+            .task {
+                do {
+                    showProgressView = true
+                    image = try await viewModel.getImage(item.imageUrl)
+                    showProgressView = false
+                } catch let error {
+                    showProgressView = false
+                    showAlert(AlertDetail(title: "Error", message: error.localizedDescription))
+                }
             }
+            
+            CustomProgress(isVisible: showProgressView)
         }
-        .task {
-            do {
-                image = try await viewModel.getImage(item.imageUrl)
-            } catch let error {
-                print(error.localizedDescription)
-            }
-        }
+    }
+    
+    func showAlert(_ alertDetail: AlertDetail) {
+        showAlert.toggle()
+        self.alertDetail = alertDetail
     }
 }
 
