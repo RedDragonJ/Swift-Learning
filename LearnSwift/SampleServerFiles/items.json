@@ -1,6 +1,6 @@
 [
 	{
-		"name1": "Apple",
+		"name": "Apple",
 		"imageUrl": "https://raw.githubusercontent.com/RedDragonJ/Swift-Learning/main/LearnSwift/SampleServerFiles/red-apple.png",
 		"type": "fruit",
 		"description": "An apple is a round or oval-shaped fruit that is typically red, green, or yellow in color. It has a firm outer skin and a juicy, sweet flesh inside that is surrounded by small seeds in the core. Apples are a popular fruit for eating fresh, as well as for cooking and baking in various recipes. They are a rich source of vitamins and antioxidants, and are considered a healthy food due to their low calorie content and high fiber content."
