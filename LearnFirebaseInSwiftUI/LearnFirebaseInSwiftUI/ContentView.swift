@@ -8,14 +8,68 @@
 import SwiftUI
 
 struct ContentView: View {
+    
+    @State private var email: String = ""
+    @State private var password: String = ""
+    
+    @State private var showSocialLogin: Bool = false
+    
+    @StateObject private var firebaseManager = FirebaseManager()
+    
     var body: some View {
-        VStack {
-            Image(systemName: "globe")
-                .imageScale(.large)
-                .foregroundColor(.accentColor)
-            Text("Hello, world!")
+        VStack(alignment: .leading) {
+            Text("Email")
+                .font(.headline)
+            TextField("Ex: Sample@Sample.com", text: $email)
+                .frame(height: 50)
+                .border(.black)
+            
+            Text("Password")
+                .font(.headline)
+            TextField("Ex: 12345", text: $password)
+                .frame(height: 50)
+                .border(.black)
+            
+            VStack {
+                Button {
+                    signUpUser()
+                } label: {
+                    Text("Sign up")
+                }
+                .buttonStyle(.borderedProminent)
+                
+                Button {
+                    signInUser()
+                } label: {
+                    Text("Sign in")
+                }
+                .buttonStyle(.borderedProminent)
+                
+                Button {
+                    showSocialLogin.toggle()
+                } label: {
+                    Text("Google login")
+                }
+                .buttonStyle(.borderedProminent)
+                .sheet(isPresented: $showSocialLogin) {
+                    GoogleSignInView(firebaseManager: firebaseManager)
+                }
+            }
+            .frame(maxWidth: .infinity)
         }
-        .padding()
+        .padding(32)
+    }
+    
+    func signUpUser() {
+        Task {
+            firebaseManager.createUser(email: email, password: password)
+        }
+    }
+    
+    func signInUser() {
+        Task {
+            firebaseManager.signinUser(email: email, password: password)
+        }
     }
 }
 
