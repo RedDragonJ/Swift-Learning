@@ -13,6 +13,7 @@ struct ContentView: View {
     @State private var password: String = ""
     
     @State private var showSocialLogin: Bool = false
+    @State private var showShoppingListView: Bool = false
     
     @StateObject private var firebaseManager = FirebaseManager()
     
@@ -58,6 +59,9 @@ struct ContentView: View {
             .frame(maxWidth: .infinity)
         }
         .padding(32)
+        .fullScreenCover(isPresented: $showShoppingListView) {
+            ShoppingListView(firebaseManager: firebaseManager)
+        }
     }
     
     func signUpUser() {
@@ -68,7 +72,9 @@ struct ContentView: View {
     
     func signInUser() {
         Task {
-            firebaseManager.signinUser(email: email, password: password)
+            if try await firebaseManager.signinUser(email: email, password: password) {
+                showShoppingListView = true
+            }
         }
     }
 }
