@@ -13,7 +13,7 @@ class FirebaseManager: ObservableObject {
     private let firebaseFirestore = FirebaseDBManager.shared
     
     @Published var user: User?
-    @Published var item: Item?
+    @Published var items: [Item] = []
     
     func createUser(email: String, password: String) {
         
@@ -83,6 +83,25 @@ class FirebaseManager: ObservableObject {
             return
         }
         
-        item = try await firebaseFirestore.fetchShoppingList(userId: user.userId)
+        items = try await firebaseFirestore.fetchShoppingList(userId: user.userId)
+    }
+    
+    @MainActor
+    func addNewItem(name: String, description: String, type: String) async throws {
+        guard let user else {
+            return
+        }
+
+        let newItem = Item(name: name, description: description, dateCreated: Date().toString(), type: ItemType(rawValue: type)!)
+        
+        try await firebaseFirestore.uploadShoppingItem(userId: user.userId, item: newItem)
+    }
+}
+
+extension Date {
+    func toString() -> String {
+        let dateFormatter = DateFormatter()
+        dateFormatter.dateStyle = .short // 12/12/2000
+        return dateFormatter.string(from: self)
     }
 }

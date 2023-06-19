@@ -11,14 +11,24 @@ struct ShoppingListView: View {
     
     @ObservedObject var firebaseManager: FirebaseManager
     
+    @State private var showAddItemView = false
+    
     var body: some View {
         VStack {
-            if let item = firebaseManager.item {
-                Text(item.id)
-                Text(item.name)
-                Text(item.description)
-            } else {
-                Text("No data or error")
+            List {
+                ForEach(firebaseManager.items, id: \.self) { item in
+                    Text(item.name)
+                }
+            }
+            
+            Button {
+                showAddItemView = true
+            } label: {
+                Text("+")
+            }
+            .buttonStyle(.borderedProminent)
+            .sheet(isPresented: $showAddItemView) {
+                AddItemView(firebaseManager: firebaseManager)
             }
         }
         .task {

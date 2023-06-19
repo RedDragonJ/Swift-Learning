@@ -7,12 +7,15 @@
 
 import Foundation
 
-enum ItemType: String, Codable {
+enum ItemType: String, Codable, CaseIterable {
     case drink = "Drink"
+    case fruit = "Fruit"
+    case meat = "Meat"
+    case snacks = "Snacks"
 }
 
-struct Item: Codable {
-    var id: String
+struct Item: Codable, Hashable {
+    var id = UUID()
     var name: String
     var description: String
     var dateCreated: String
