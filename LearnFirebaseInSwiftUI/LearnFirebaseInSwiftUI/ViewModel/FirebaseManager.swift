@@ -95,6 +95,23 @@ class FirebaseManager: ObservableObject {
         let newItem = Item(name: name, description: description, dateCreated: Date().toString(), type: ItemType(rawValue: type)!)
         
         try await firebaseFirestore.uploadShoppingItem(userId: user.userId, item: newItem)
+        try await getShoppingList()
+    }
+    
+    @MainActor
+    func deleteItem(atOffsets: IndexSet) async throws {
+        guard let user else {
+            return
+        }
+        
+        guard let index = atOffsets.first else {
+            return
+        }
+        
+        let itemToBeDeleted = items[index]
+        
+        try await firebaseFirestore.removeShoppingItem(userId: user.userId, item: itemToBeDeleted)
+        try await getShoppingList()
     }
 }
 

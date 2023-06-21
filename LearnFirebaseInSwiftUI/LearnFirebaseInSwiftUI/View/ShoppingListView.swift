@@ -19,6 +19,7 @@ struct ShoppingListView: View {
                 ForEach(firebaseManager.items, id: \.self) { item in
                     Text(item.name)
                 }
+                .onDelete(perform: delete)
             }
             
             Button {
@@ -34,6 +35,16 @@ struct ShoppingListView: View {
         .task {
             do {
                 try await firebaseManager.getShoppingList()
+            } catch {
+                print(error)
+            }
+        }
+    }
+    
+    func delete(at offsets: IndexSet) {
+        Task {
+            do {
+                try await firebaseManager.deleteItem(atOffsets: offsets)
             } catch {
                 print(error)
             }

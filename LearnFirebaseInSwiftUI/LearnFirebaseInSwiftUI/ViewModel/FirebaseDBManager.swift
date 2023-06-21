@@ -59,4 +59,27 @@ class FirebaseDBManager {
             throw error
         }
     }
+    
+    func removeShoppingItem(userId: String, item: Item) async throws {
+        let docRef = fireDB.collection("Shopping").document(userId)
+
+        guard let itemData = try? JSONEncoder().encode(item) else {
+            throw NSError(domain: "ErrorDomain", code: 999)
+        }
+        
+        guard let itemJson = try? JSONSerialization.jsonObject(with: itemData) as? [String: Any] else {
+            throw NSError(domain: "ErrorDomain", code: 999)
+        }
+        
+        do {
+            if try await docRef.getDocument().exists {
+                try await docRef.updateData(["shoppingList": FieldValue.arrayRemove([itemJson])])
+            } else {
+                throw NSError(domain: "ErrorDomain", code: 999, userInfo: [NSLocalizedDescriptionKey: "There is nothing to delete"])
+            }
+            
+        } catch {
+            throw error
+        }
+    }
 }
