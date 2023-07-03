@@ -17,7 +17,11 @@ struct ShoppingListView: View {
         VStack {
             List {
                 ForEach(firebaseManager.items, id: \.self) { item in
-                    Text(item.name)
+                    if FirebaseRCManager.shared.isItemView_2 {
+                        ItemView_2(name: item.name, description: item.description)
+                    } else {
+                        ItemView_1(name: item.name)
+                    }
                 }
                 .onDelete(perform: delete)
             }

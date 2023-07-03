@@ -79,6 +79,7 @@ class FirebaseManager: ObservableObject {
     
     @MainActor
     func getShoppingList() async throws {
+        
         guard let user else {
             return
         }
