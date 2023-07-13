@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		2A527BBA2A5E55830045EADB /* threads.gif in Resources */ = {isa = PBXBuildFile; fileRef = 2A527BB92A5E55830045EADB /* threads.gif */; };
+		2A527BBF2A5F7F0C0045EADB /* BallBounceAnimation.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2A527BBE2A5F7F0C0045EADB /* BallBounceAnimation.swift */; };
 		2AC904FB2A428E8800F0E889 /* AnimationsApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2AC904FA2A428E8800F0E889 /* AnimationsApp.swift */; };
 		2AC904FD2A428E8800F0E889 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2AC904FC2A428E8800F0E889 /* ContentView.swift */; };
 		2AC904FF2A428E8A00F0E889 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 2AC904FE2A428E8A00F0E889 /* Assets.xcassets */; };
@@ -15,6 +17,8 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		2A527BB92A5E55830045EADB /* threads.gif */ = {isa = PBXFileReference; lastKnownFileType = image.gif; path = threads.gif; sourceTree = "<group>"; };
+		2A527BBE2A5F7F0C0045EADB /* BallBounceAnimation.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BallBounceAnimation.swift; sourceTree = "<group>"; };
 		2AC904F72A428E8800F0E889 /* Animations.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Animations.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		2AC904FA2A428E8800F0E889 /* AnimationsApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AnimationsApp.swift; sourceTree = "<group>"; };
 		2AC904FC2A428E8800F0E889 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -55,9 +59,11 @@
 			children = (
 				2AC904FA2A428E8800F0E889 /* AnimationsApp.swift */,
 				2AC904FC2A428E8800F0E889 /* ContentView.swift */,
+				2A527BB92A5E55830045EADB /* threads.gif */,
 				2AC904FE2A428E8A00F0E889 /* Assets.xcassets */,
 				2AC905002A428E8A00F0E889 /* Preview Content */,
 				2AC905082A429C8200F0E889 /* ButtonAnimations_1.swift */,
+				2A527BBE2A5F7F0C0045EADB /* BallBounceAnimation.swift */,
 			);
 			path = Animations;
 			sourceTree = "<group>";
@@ -86,6 +92,8 @@
 			dependencies = (
 			);
 			name = Animations;
+			packageProductDependencies = (
+			);
 			productName = Animations;
 			productReference = 2AC904F72A428E8800F0E889 /* Animations.app */;
 			productType = "com.apple.product-type.application";
@@ -114,6 +122,8 @@
 				Base,
 			);
 			mainGroup = 2AC904EE2A428E8800F0E889;
+			packageReferences = (
+			);
 			productRefGroup = 2AC904F82A428E8800F0E889 /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
@@ -128,6 +138,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				2A527BBA2A5E55830045EADB /* threads.gif in Resources */,
 				2AC905022A428E8A00F0E889 /* Preview Assets.xcassets in Resources */,
 				2AC904FF2A428E8A00F0E889 /* Assets.xcassets in Resources */,
 			);
@@ -143,6 +154,7 @@
 				2AC905092A429C8200F0E889 /* ButtonAnimations_1.swift in Sources */,
 				2AC904FD2A428E8800F0E889 /* ContentView.swift in Sources */,
 				2AC904FB2A428E8800F0E889 /* AnimationsApp.swift in Sources */,
+				2A527BBF2A5F7F0C0045EADB /* BallBounceAnimation.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
