@@ -14,6 +14,7 @@
 		2AC904FF2A428E8A00F0E889 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 2AC904FE2A428E8A00F0E889 /* Assets.xcassets */; };
 		2AC905022A428E8A00F0E889 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 2AC905012A428E8A00F0E889 /* Preview Assets.xcassets */; };
 		2AC905092A429C8200F0E889 /* ButtonAnimations_1.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2AC905082A429C8200F0E889 /* ButtonAnimations_1.swift */; };
+		2ACFD0682A6F5AB30061CDE4 /* FlippingCardAnimation.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2ACFD0672A6F5AB30061CDE4 /* FlippingCardAnimation.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -25,6 +26,7 @@
 		2AC904FE2A428E8A00F0E889 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		2AC905012A428E8A00F0E889 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		2AC905082A429C8200F0E889 /* ButtonAnimations_1.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ButtonAnimations_1.swift; sourceTree = "<group>"; };
+		2ACFD0672A6F5AB30061CDE4 /* FlippingCardAnimation.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FlippingCardAnimation.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -64,6 +66,7 @@
 				2AC905082A429C8200F0E889 /* ButtonAnimations_1.swift */,
 				2A527BBE2A5F7F0C0045EADB /* BallBounceAnimation.swift */,
 				2A527BC02A662EDA0045EADB /* DvDBounceAnimation.swift */,
+				2ACFD0672A6F5AB30061CDE4 /* FlippingCardAnimation.swift */,
 			);
 			path = Animations;
 			sourceTree = "<group>";
@@ -155,6 +158,7 @@
 				2AC904FD2A428E8800F0E889 /* ContentView.swift in Sources */,
 				2AC904FB2A428E8800F0E889 /* AnimationsApp.swift in Sources */,
 				2A527BBF2A5F7F0C0045EADB /* BallBounceAnimation.swift in Sources */,
+				2ACFD0682A6F5AB30061CDE4 /* FlippingCardAnimation.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
