@@ -9,6 +9,7 @@
 /* Begin PBXBuildFile section */
 		2A527BBF2A5F7F0C0045EADB /* BallBounceAnimation.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2A527BBE2A5F7F0C0045EADB /* BallBounceAnimation.swift */; };
 		2A527BC12A662EDA0045EADB /* DvDBounceAnimation.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2A527BC02A662EDA0045EADB /* DvDBounceAnimation.swift */; };
+		2A8338352A81E4D000EB7159 /* WaveAnimation.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2A8338342A81E4D000EB7159 /* WaveAnimation.swift */; };
 		2A91587E2A78A2FB0059A360 /* FlashingXLogo.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2A91587D2A78A2FB0059A360 /* FlashingXLogo.swift */; };
 		2AC904FB2A428E8800F0E889 /* AnimationsApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2AC904FA2A428E8800F0E889 /* AnimationsApp.swift */; };
 		2AC904FD2A428E8800F0E889 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2AC904FC2A428E8800F0E889 /* ContentView.swift */; };
@@ -21,6 +22,7 @@
 /* Begin PBXFileReference section */
 		2A527BBE2A5F7F0C0045EADB /* BallBounceAnimation.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BallBounceAnimation.swift; sourceTree = "<group>"; };
 		2A527BC02A662EDA0045EADB /* DvDBounceAnimation.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DvDBounceAnimation.swift; sourceTree = "<group>"; };
+		2A8338342A81E4D000EB7159 /* WaveAnimation.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WaveAnimation.swift; sourceTree = "<group>"; };
 		2A91587D2A78A2FB0059A360 /* FlashingXLogo.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FlashingXLogo.swift; sourceTree = "<group>"; };
 		2AC904F72A428E8800F0E889 /* Animations.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Animations.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		2AC904FA2A428E8800F0E889 /* AnimationsApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AnimationsApp.swift; sourceTree = "<group>"; };
@@ -70,6 +72,7 @@
 				2A527BC02A662EDA0045EADB /* DvDBounceAnimation.swift */,
 				2ACFD0672A6F5AB30061CDE4 /* FlippingCardAnimation.swift */,
 				2A91587D2A78A2FB0059A360 /* FlashingXLogo.swift */,
+				2A8338342A81E4D000EB7159 /* WaveAnimation.swift */,
 			);
 			path = Animations;
 			sourceTree = "<group>";
@@ -157,6 +160,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				2AC905092A429C8200F0E889 /* ButtonAnimations_1.swift in Sources */,
+				2A8338352A81E4D000EB7159 /* WaveAnimation.swift in Sources */,
 				2A527BC12A662EDA0045EADB /* DvDBounceAnimation.swift in Sources */,
 				2AC904FD2A428E8800F0E889 /* ContentView.swift in Sources */,
 				2AC904FB2A428E8800F0E889 /* AnimationsApp.swift in Sources */,
