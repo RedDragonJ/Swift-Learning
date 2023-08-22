@@ -7,83 +7,85 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		2A527BBF2A5F7F0C0045EADB /* BallBounceAnimation.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2A527BBE2A5F7F0C0045EADB /* BallBounceAnimation.swift */; };
-		2A527BC12A662EDA0045EADB /* DvDBounceAnimation.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2A527BC02A662EDA0045EADB /* DvDBounceAnimation.swift */; };
-		2A8338352A81E4D000EB7159 /* WaveAnimation.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2A8338342A81E4D000EB7159 /* WaveAnimation.swift */; };
-		2A8338372A8B29FB00EB7159 /* PepeAndParticleAnimation.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2A8338362A8B29FB00EB7159 /* PepeAndParticleAnimation.swift */; };
-		2A91587E2A78A2FB0059A360 /* FlashingXLogo.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2A91587D2A78A2FB0059A360 /* FlashingXLogo.swift */; };
-		2AC904FB2A428E8800F0E889 /* AnimationsApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2AC904FA2A428E8800F0E889 /* AnimationsApp.swift */; };
-		2AC904FD2A428E8800F0E889 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2AC904FC2A428E8800F0E889 /* ContentView.swift */; };
-		2AC904FF2A428E8A00F0E889 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 2AC904FE2A428E8A00F0E889 /* Assets.xcassets */; };
-		2AC905022A428E8A00F0E889 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 2AC905012A428E8A00F0E889 /* Preview Assets.xcassets */; };
-		2AC905092A429C8200F0E889 /* ButtonAnimations_1.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2AC905082A429C8200F0E889 /* ButtonAnimations_1.swift */; };
-		2ACFD0682A6F5AB30061CDE4 /* FlippingCardAnimation.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2ACFD0672A6F5AB30061CDE4 /* FlippingCardAnimation.swift */; };
+		2A439AB82A94527400325524 /* metamask-ios-sdk in Frameworks */ = {isa = PBXBuildFile; productRef = 2A439AB72A94527400325524 /* metamask-ios-sdk */; };
+		2A439ABC2A94534200325524 /* MetaMaskRepo.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2A439ABB2A94534200325524 /* MetaMaskRepo.swift */; };
+		2A439ABF2A94555800325524 /* Starscream in Frameworks */ = {isa = PBXBuildFile; productRef = 2A439ABE2A94555800325524 /* Starscream */; };
+		2ABD32E72A944E2900E08D5E /* MetaSwiftUIApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2ABD32E62A944E2900E08D5E /* MetaSwiftUIApp.swift */; };
+		2ABD32E92A944E2900E08D5E /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2ABD32E82A944E2900E08D5E /* ContentView.swift */; };
+		2ABD32EB2A944E2A00E08D5E /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 2ABD32EA2A944E2A00E08D5E /* Assets.xcassets */; };
+		2ABD32EE2A944E2A00E08D5E /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 2ABD32ED2A944E2A00E08D5E /* Preview Assets.xcassets */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
-		2A527BBE2A5F7F0C0045EADB /* BallBounceAnimation.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BallBounceAnimation.swift; sourceTree = "<group>"; };
-		2A527BC02A662EDA0045EADB /* DvDBounceAnimation.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DvDBounceAnimation.swift; sourceTree = "<group>"; };
-		2A8338342A81E4D000EB7159 /* WaveAnimation.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WaveAnimation.swift; sourceTree = "<group>"; };
-		2A8338362A8B29FB00EB7159 /* PepeAndParticleAnimation.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PepeAndParticleAnimation.swift; sourceTree = "<group>"; };
-		2A91587D2A78A2FB0059A360 /* FlashingXLogo.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FlashingXLogo.swift; sourceTree = "<group>"; };
-		2AC904F72A428E8800F0E889 /* Animations.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Animations.app; sourceTree = BUILT_PRODUCTS_DIR; };
-		2AC904FA2A428E8800F0E889 /* AnimationsApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AnimationsApp.swift; sourceTree = "<group>"; };
-		2AC904FC2A428E8800F0E889 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
-		2AC904FE2A428E8A00F0E889 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
-		2AC905012A428E8A00F0E889 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
-		2AC905082A429C8200F0E889 /* ButtonAnimations_1.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ButtonAnimations_1.swift; sourceTree = "<group>"; };
-		2ACFD0672A6F5AB30061CDE4 /* FlippingCardAnimation.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FlippingCardAnimation.swift; sourceTree = "<group>"; };
+		2A439ABB2A94534200325524 /* MetaMaskRepo.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MetaMaskRepo.swift; sourceTree = "<group>"; };
+		2ABD32E32A944E2900E08D5E /* MetaSwiftUI.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MetaSwiftUI.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		2ABD32E62A944E2900E08D5E /* MetaSwiftUIApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MetaSwiftUIApp.swift; sourceTree = "<group>"; };
+		2ABD32E82A944E2900E08D5E /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
+		2ABD32EA2A944E2A00E08D5E /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		2ABD32ED2A944E2A00E08D5E /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
-		2AC904F42A428E8800F0E889 /* Frameworks */ = {
+		2ABD32E02A944E2900E08D5E /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				2A439AB82A94527400325524 /* metamask-ios-sdk in Frameworks */,
+				2A439ABF2A94555800325524 /* Starscream in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
-		2AC904EE2A428E8800F0E889 = {
+		2A439AB92A94531400325524 /* ViewModel */ = {
 			isa = PBXGroup;
 			children = (
-				2AC904F92A428E8800F0E889 /* Animations */,
-				2AC904F82A428E8800F0E889 /* Products */,
+				2A439ABB2A94534200325524 /* MetaMaskRepo.swift */,
+			);
+			path = ViewModel;
+			sourceTree = "<group>";
+		};
+		2A439ABA2A94531D00325524 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				2ABD32E82A944E2900E08D5E /* ContentView.swift */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		2ABD32DA2A944E2900E08D5E = {
+			isa = PBXGroup;
+			children = (
+				2ABD32E52A944E2900E08D5E /* MetaSwiftUI */,
+				2ABD32E42A944E2900E08D5E /* Products */,
 			);
 			sourceTree = "<group>";
 		};
-		2AC904F82A428E8800F0E889 /* Products */ = {
+		2ABD32E42A944E2900E08D5E /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				2AC904F72A428E8800F0E889 /* Animations.app */,
+				2ABD32E32A944E2900E08D5E /* MetaSwiftUI.app */,
 			);
 			name = Products;
 			sourceTree = "<group>";
 		};
-		2AC904F92A428E8800F0E889 /* Animations */ = {
+		2ABD32E52A944E2900E08D5E /* MetaSwiftUI */ = {
 			isa = PBXGroup;
 			children = (
-				2AC904FA2A428E8800F0E889 /* AnimationsApp.swift */,
-				2AC904FC2A428E8800F0E889 /* ContentView.swift */,
-				2AC904FE2A428E8A00F0E889 /* Assets.xcassets */,
-				2AC905002A428E8A00F0E889 /* Preview Content */,
-				2AC905082A429C8200F0E889 /* ButtonAnimations_1.swift */,
-				2A527BBE2A5F7F0C0045EADB /* BallBounceAnimation.swift */,
-				2A527BC02A662EDA0045EADB /* DvDBounceAnimation.swift */,
-				2ACFD0672A6F5AB30061CDE4 /* FlippingCardAnimation.swift */,
-				2A91587D2A78A2FB0059A360 /* FlashingXLogo.swift */,
-				2A8338342A81E4D000EB7159 /* WaveAnimation.swift */,
-				2A8338362A8B29FB00EB7159 /* PepeAndParticleAnimation.swift */,
+				2ABD32E62A944E2900E08D5E /* MetaSwiftUIApp.swift */,
+				2A439ABA2A94531D00325524 /* View */,
+				2A439AB92A94531400325524 /* ViewModel */,
+				2ABD32EA2A944E2A00E08D5E /* Assets.xcassets */,
+				2ABD32EC2A944E2A00E08D5E /* Preview Content */,
 			);
-			path = Animations;
+			path = MetaSwiftUI;
 			sourceTree = "<group>";
 		};
-		2AC905002A428E8A00F0E889 /* Preview Content */ = {
+		2ABD32EC2A944E2A00E08D5E /* Preview Content */ = {
 			isa = PBXGroup;
 			children = (
-				2AC905012A428E8A00F0E889 /* Preview Assets.xcassets */,
+				2ABD32ED2A944E2A00E08D5E /* Preview Assets.xcassets */,
 			);
 			path = "Preview Content";
 			sourceTree = "<group>";
@@ -91,41 +93,43 @@
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
-		2AC904F62A428E8800F0E889 /* Animations */ = {
+		2ABD32E22A944E2900E08D5E /* MetaSwiftUI */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 2AC905052A428E8A00F0E889 /* Build configuration list for PBXNativeTarget "Animations" */;
+			buildConfigurationList = 2ABD32F12A944E2A00E08D5E /* Build configuration list for PBXNativeTarget "MetaSwiftUI" */;
 			buildPhases = (
-				2AC904F32A428E8800F0E889 /* Sources */,
-				2AC904F42A428E8800F0E889 /* Frameworks */,
-				2AC904F52A428E8800F0E889 /* Resources */,
+				2ABD32DF2A944E2900E08D5E /* Sources */,
+				2ABD32E02A944E2900E08D5E /* Frameworks */,
+				2ABD32E12A944E2900E08D5E /* Resources */,
 			);
 			buildRules = (
 			);
 			dependencies = (
 			);
-			name = Animations;
+			name = MetaSwiftUI;
 			packageProductDependencies = (
+				2A439AB72A94527400325524 /* metamask-ios-sdk */,
+				2A439ABE2A94555800325524 /* Starscream */,
 			);
-			productName = Animations;
-			productReference = 2AC904F72A428E8800F0E889 /* Animations.app */;
+			productName = MetaSwiftUI;
+			productReference = 2ABD32E32A944E2900E08D5E /* MetaSwiftUI.app */;
 			productType = "com.apple.product-type.application";
 		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
-		2AC904EF2A428E8800F0E889 /* Project object */ = {
+		2ABD32DB2A944E2900E08D5E /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
 				BuildIndependentTargetsInParallel = 1;
 				LastSwiftUpdateCheck = 1430;
 				LastUpgradeCheck = 1430;
 				TargetAttributes = {
-					2AC904F62A428E8800F0E889 = {
+					2ABD32E22A944E2900E08D5E = {
 						CreatedOnToolsVersion = 14.3.1;
 					};
 				};
 			};
-			buildConfigurationList = 2AC904F22A428E8800F0E889 /* Build configuration list for PBXProject "Animations" */;
+			buildConfigurationList = 2ABD32DE2A944E2900E08D5E /* Build configuration list for PBXProject "MetaSwiftUI" */;
 			compatibilityVersion = "Xcode 14.0";
 			developmentRegion = en;
 			hasScannedForEncodings = 0;
@@ -133,51 +137,47 @@
 				en,
 				Base,
 			);
-			mainGroup = 2AC904EE2A428E8800F0E889;
+			mainGroup = 2ABD32DA2A944E2900E08D5E;
 			packageReferences = (
+				2A439AB62A94527400325524 /* XCRemoteSwiftPackageReference "metamask-ios-sdk" */,
+				2A439ABD2A94555800325524 /* XCRemoteSwiftPackageReference "Starscream" */,
 			);
-			productRefGroup = 2AC904F82A428E8800F0E889 /* Products */;
+			productRefGroup = 2ABD32E42A944E2900E08D5E /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				2AC904F62A428E8800F0E889 /* Animations */,
+				2ABD32E22A944E2900E08D5E /* MetaSwiftUI */,
 			);
 		};
 /* End PBXProject section */
 
 /* Begin PBXResourcesBuildPhase section */
-		2AC904F52A428E8800F0E889 /* Resources */ = {
+		2ABD32E12A944E2900E08D5E /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				2AC905022A428E8A00F0E889 /* Preview Assets.xcassets in Resources */,
-				2AC904FF2A428E8A00F0E889 /* Assets.xcassets in Resources */,
+				2ABD32EE2A944E2A00E08D5E /* Preview Assets.xcassets in Resources */,
+				2ABD32EB2A944E2A00E08D5E /* Assets.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
-		2AC904F32A428E8800F0E889 /* Sources */ = {
+		2ABD32DF2A944E2900E08D5E /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				2AC905092A429C8200F0E889 /* ButtonAnimations_1.swift in Sources */,
-				2A8338352A81E4D000EB7159 /* WaveAnimation.swift in Sources */,
-				2A527BC12A662EDA0045EADB /* DvDBounceAnimation.swift in Sources */,
-				2AC904FD2A428E8800F0E889 /* ContentView.swift in Sources */,
-				2AC904FB2A428E8800F0E889 /* AnimationsApp.swift in Sources */,
-				2A527BBF2A5F7F0C0045EADB /* BallBounceAnimation.swift in Sources */,
-				2ACFD0682A6F5AB30061CDE4 /* FlippingCardAnimation.swift in Sources */,
-				2A91587E2A78A2FB0059A360 /* FlashingXLogo.swift in Sources */,
-				2A8338372A8B29FB00EB7159 /* PepeAndParticleAnimation.swift in Sources */,
+				2ABD32E92A944E2900E08D5E /* ContentView.swift in Sources */,
+				2ABD32E72A944E2900E08D5E /* MetaSwiftUIApp.swift in Sources */,
+				2A439ABC2A94534200325524 /* MetaMaskRepo.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
 
 /* Begin XCBuildConfiguration section */
-		2AC905032A428E8A00F0E889 /* Debug */ = {
+		2ABD32EF2A944E2A00E08D5E /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
@@ -237,7 +237,7 @@
 			};
 			name = Debug;
 		};
-		2AC905042A428E8A00F0E889 /* Release */ = {
+		2ABD32F02A944E2A00E08D5E /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
@@ -291,14 +291,15 @@
 			};
 			name = Release;
 		};
-		2AC905062A428E8A00F0E889 /* Debug */ = {
+		2ABD32F22A944E2A00E08D5E /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
-				DEVELOPMENT_ASSET_PATHS = "\"Animations/Preview Content\"";
+				DEVELOPMENT_ASSET_PATHS = "\"MetaSwiftUI/Preview Content\"";
+				DEVELOPMENT_TEAM = R97P94E2EN;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
@@ -306,12 +307,13 @@
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
 				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = com.learnfirebaseinswiftui.Animations;
+				PRODUCT_BUNDLE_IDENTIFIER = com.learnfirebaseinswiftui.MetaSwiftUI;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
@@ -319,14 +321,15 @@
 			};
 			name = Debug;
 		};
-		2AC905072A428E8A00F0E889 /* Release */ = {
+		2ABD32F32A944E2A00E08D5E /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
-				DEVELOPMENT_ASSET_PATHS = "\"Animations/Preview Content\"";
+				DEVELOPMENT_ASSET_PATHS = "\"MetaSwiftUI/Preview Content\"";
+				DEVELOPMENT_TEAM = R97P94E2EN;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
@@ -334,12 +337,13 @@
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
 				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = com.learnfirebaseinswiftui.Animations;
+				PRODUCT_BUNDLE_IDENTIFIER = com.learnfirebaseinswiftui.MetaSwiftUI;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
@@ -350,25 +354,57 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		2AC904F22A428E8800F0E889 /* Build configuration list for PBXProject "Animations" */ = {
+		2ABD32DE2A944E2900E08D5E /* Build configuration list for PBXProject "MetaSwiftUI" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				2AC905032A428E8A00F0E889 /* Debug */,
-				2AC905042A428E8A00F0E889 /* Release */,
+				2ABD32EF2A944E2A00E08D5E /* Debug */,
+				2ABD32F02A944E2A00E08D5E /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		2AC905052A428E8A00F0E889 /* Build configuration list for PBXNativeTarget "Animations" */ = {
+		2ABD32F12A944E2A00E08D5E /* Build configuration list for PBXNativeTarget "MetaSwiftUI" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				2AC905062A428E8A00F0E889 /* Debug */,
-				2AC905072A428E8A00F0E889 /* Release */,
+				2ABD32F22A944E2A00E08D5E /* Debug */,
+				2ABD32F32A944E2A00E08D5E /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		2A439AB62A94527400325524 /* XCRemoteSwiftPackageReference "metamask-ios-sdk" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/MetaMask/metamask-ios-sdk";
+			requirement = {
+				kind = upToNextMinorVersion;
+				minimumVersion = 0.2.0;
+			};
+		};
+		2A439ABD2A94555800325524 /* XCRemoteSwiftPackageReference "Starscream" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/daltoniam/Starscream.git";
+			requirement = {
+				kind = exactVersion;
+				version = 4.0.4;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		2A439AB72A94527400325524 /* metamask-ios-sdk */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 2A439AB62A94527400325524 /* XCRemoteSwiftPackageReference "metamask-ios-sdk" */;
+			productName = "metamask-ios-sdk";
+		};
+		2A439ABE2A94555800325524 /* Starscream */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 2A439ABD2A94555800325524 /* XCRemoteSwiftPackageReference "Starscream" */;
+			productName = Starscream;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
-	rootObject = 2AC904EF2A428E8800F0E889 /* Project object */;
+	rootObject = 2ABD32DB2A944E2900E08D5E /* Project object */;
 }
