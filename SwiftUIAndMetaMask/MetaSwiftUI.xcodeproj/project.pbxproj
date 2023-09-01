@@ -18,6 +18,7 @@
 
 /* Begin PBXFileReference section */
 		2A439ABB2A94534200325524 /* MetaMaskRepo.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MetaMaskRepo.swift; sourceTree = "<group>"; };
+		2A439AC02A9DCE7400325524 /* MetaSwiftUI.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = MetaSwiftUI.entitlements; sourceTree = "<group>"; };
 		2ABD32E32A944E2900E08D5E /* MetaSwiftUI.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MetaSwiftUI.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		2ABD32E62A944E2900E08D5E /* MetaSwiftUIApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MetaSwiftUIApp.swift; sourceTree = "<group>"; };
 		2ABD32E82A944E2900E08D5E /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -73,6 +74,7 @@
 		2ABD32E52A944E2900E08D5E /* MetaSwiftUI */ = {
 			isa = PBXGroup;
 			children = (
+				2A439AC02A9DCE7400325524 /* MetaSwiftUI.entitlements */,
 				2ABD32E62A944E2900E08D5E /* MetaSwiftUIApp.swift */,
 				2A439ABA2A94531D00325524 /* View */,
 				2A439AB92A94531400325524 /* ViewModel */,
@@ -296,6 +298,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_ENTITLEMENTS = MetaSwiftUI/MetaSwiftUI.entitlements;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_ASSET_PATHS = "\"MetaSwiftUI/Preview Content\"";
@@ -326,6 +329,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_ENTITLEMENTS = MetaSwiftUI/MetaSwiftUI.entitlements;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_ASSET_PATHS = "\"MetaSwiftUI/Preview Content\"";
