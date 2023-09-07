@@ -11,21 +11,34 @@ struct ContentView: View {
     
     @StateObject var metaMaskRepo = MetaMaskRepo()
     
+    @State private var status = "Offline"
+    
     var body: some View {
-        VStack {
+        VStack(alignment: .leading, spacing: 32) {
             Text("MetaSwiftUI")
                 .font(.title)
             
-            Text(metaMaskRepo.ethereum.selectedAddress)
+            Text("Status: \(metaMaskRepo.connectionStatus)")
+                .fontWeight(.bold)
+            
+            Text("Chain ID: \(metaMaskRepo.chainID)")
+                .fontWeight(.bold)
+            
+            Text("Account: \(metaMaskRepo.ethAddress)")
                 .fontWeight(.bold)
             
             Button {
                 metaMaskRepo.connectToDapp()
             } label: {
                 Text("Connect to MetaMask")
-                    .frame(width: 300, height: 50)
-                    .border(.black)
+                    .frame(width: 300, height: 40)
             }
+            .buttonStyle(.borderedProminent)
+            
+            Spacer()
+        }
+        .onReceive(NotificationCenter.default.publisher(for: .Connection)) { notification in
+            status = notification.userInfo?["value"] as? String ?? "Offline"
         }
         .padding()
     }
