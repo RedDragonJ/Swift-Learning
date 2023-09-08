@@ -30,6 +30,8 @@ class MetaMaskRepo: ObservableObject {
     private var cancellables: Set<AnyCancellable> = []
     
     init() {
+        ethereum.clearSession()
+        ethereum.disconnect()
         observeConnectionStatus()
     }
     

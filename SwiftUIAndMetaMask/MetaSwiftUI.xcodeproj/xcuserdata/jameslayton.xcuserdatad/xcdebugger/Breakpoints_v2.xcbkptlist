@@ -3,4 +3,70 @@
    uuid = "C9A71461-A812-4C44-84B7-A8DBEF668401"
    type = "1"
    version = "2.0">
+   <Breakpoints>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "A0D362DA-B05F-4CDF-A6C5-99503D862ABC"
+            shouldBeEnabled = "Yes"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "../../../Library/Developer/Xcode/DerivedData/MetaSwiftUI-fpqknrtxmachnifqavjfkplcnjxl/SourcePackages/checkouts/metamask-ios-sdk/Sources/metamask-ios-sdk/Classes/Communication/models/Models.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "42"
+            endingLineNumber = "42"
+            landmarkName = "message(from:)"
+            landmarkType = "7">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "69F9AAAF-5EAD-49BA-AF24-8BB3F78D812A"
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "../../../Library/Developer/Xcode/DerivedData/MetaSwiftUI-fpqknrtxmachnifqavjfkplcnjxl/SourcePackages/checkouts/metamask-ios-sdk/Sources/metamask-ios-sdk/Classes/Communication/SocketClient.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "233"
+            endingLineNumber = "233"
+            landmarkName = "handleReceiveMessages()"
+            landmarkType = "7">
+            <Locations>
+               <Location
+                  uuid = "69F9AAAF-5EAD-49BA-AF24-8BB3F78D812A - 4c02d2307e735f70"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "closure #1 (Swift.Array&lt;Any&gt;) -&gt; () in metamask_ios_sdk.SocketClient.handleReceiveMessages() -&gt; ()"
+                  moduleName = "MetaSwiftUI"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/jameslayton/Library/Developer/Xcode/DerivedData/MetaSwiftUI-fpqknrtxmachnifqavjfkplcnjxl/SourcePackages/checkouts/metamask-ios-sdk/Sources/metamask-ios-sdk/Classes/Communication/SocketClient.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "233"
+                  endingLineNumber = "233"
+                  offsetFromSymbolStart = "476">
+               </Location>
+               <Location
+                  uuid = "69F9AAAF-5EAD-49BA-AF24-8BB3F78D812A - 4c02d2307e735f70"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "closure #1 (Swift.Array&lt;Any&gt;) -&gt; () in metamask_ios_sdk.SocketClient.handleReceiveMessages() -&gt; ()"
+                  moduleName = "MetaSwiftUI"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/jameslayton/Library/Developer/Xcode/DerivedData/MetaSwiftUI-fpqknrtxmachnifqavjfkplcnjxl/SourcePackages/checkouts/metamask-ios-sdk/Sources/metamask-ios-sdk/Classes/Communication/SocketClient.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "233"
+                  endingLineNumber = "233"
+                  offsetFromSymbolStart = "712">
+               </Location>
+            </Locations>
+         </BreakpointContent>
+      </BreakpointProxy>
+   </Breakpoints>
 </Bucket>
