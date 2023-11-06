@@ -22,6 +22,7 @@ class MetaMaskRepo: ObservableObject {
     }
     @Published var chainID = ""
     @Published var ethAddress = ""
+    @Published var balance = ""
     
     @Published private var ethereum = MetaMaskSDK.shared.ethereum
     private let dappName = "Dub Dapp"
@@ -60,5 +61,35 @@ class MetaMaskRepo: ObservableObject {
                 }
             })
             .store(in: &cancellables)
+    }
+    
+    func getBalance() {
+        let parameters: [String] = [ethAddress, "latest"]
+        
+        let getBalanceRequest = EthereumRequest(method: .ethGetBalance, params: parameters)
+        
+        ethereum.request(getBalanceRequest)?.sink(receiveCompletion: { completion in
+            switch completion {
+            case .failure(let error):
+                print("Failed to get balance, \(error.localizedDescription)")
+            default: break
+            }
+        }, receiveValue: { result in
+            DispatchQueue.main.async {
+                let ethInHexForm = result as? String ?? ""
+                self.balance = "\(self.convertHexIntoDecimal(hex: ethInHexForm)) ETH"
+            }
+        })
+        .store(in: &cancellables)
+    }
+    
+    func convertHexIntoDecimal(hex: String) -> String {
+        let scanner = Scanner(string: hex)
+        var hexInt: UInt64 = 0
+        scanner.scanHexInt64(&hexInt)
+        var etherDecimal = Decimal(hexInt) / pow(10, 18)
+        var roundedEtherDecimal = Decimal()
+        NSDecimalRound(&roundedEtherDecimal, &etherDecimal, 5, .up)
+        return roundedEtherDecimal.description
     }
 }
