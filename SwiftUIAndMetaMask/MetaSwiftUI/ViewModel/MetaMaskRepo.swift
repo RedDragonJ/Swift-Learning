@@ -93,3 +93,46 @@ class MetaMaskRepo: ObservableObject {
         return roundedEtherDecimal.description
     }
 }
+
+// REMINDER: Use latest Metamask iOS SDK https://github.com/MetaMask/metamask-ios-sdk/releases
+//extension MetaMaskRepo {
+//    func connectToMetaMaskV2() async throws {
+//        let appMetadata = AppMetadata(name: dappName, url: dappUrl)
+//        metaMaskSDK = .shared(appMetadata, sdkOptions: nil)
+//
+//        do {
+//            let result = await metaMaskSDK?.connect()
+//            switch result {
+//            case .success(let accounts):
+//                MLog.logEvent(with: K.EventName.metaMaskWalletConnection)
+//
+//                if let jsonData = accounts.data(using: .utf8),
+//                   let jsonArray = try? JSONDecoder().decode([String].self, from: jsonData),
+//                   let ethAddress = jsonArray.first {
+//                    DispatchQueue.main.async {
+//                        self.saveWalletAddress(ethAddress)
+//                    }
+//                } else {
+//                    let error = NSError(domain: K.InvalidState.domain,
+//                                        code: K.InvalidState.code,
+//                                        userInfo: [NSLocalizedDescriptionKey: "Failed to parse MetaMask address data."])
+//                    MLog.logError(.network, error: error)
+//                    throw error
+//                }
+//
+//            case .failure(let error):
+//                MLog.logError(.network, error: error)
+//                throw error
+//            case .none:
+//                DispatchQueue.main.async {
+//                    self.saveWalletAddress(nil)
+//                }
+//            }
+//            disconnectFromMetaMask()
+//        } catch {
+//            disconnectFromMetaMask()
+//            MLog.logError(.network, error: error)
+//            throw error
+//        }
+//    }
+//}
